@@ -19,7 +19,7 @@ RUN npm install
 FROM node:20.6-alpine3.17
 EXPOSE 8080
 # RUN mkdir /app
-ENV DB_HOST="mysql"
+ENV DB_HOST="local host"
 RUN addgroup -S expense && adduser -S expense -G expense && \
     mkdir /opt/server && \
     chown -R expense:expense /opt/server
